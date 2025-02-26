@@ -22,3 +22,13 @@
 -- WHERE total > 1000
 -- ORDER BY order_date DESC
 -- LIMIT 5;
+
+-- 4.5 Getting Ranking of the Customer with the Highest Purchase
+SELECT 
+    CONCAT(c.first_name, ' ', c.last_name) AS nome,
+    SUM(o.total) AS total_compras
+FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id
+GROUP BY c.customer_id, c.first_name, c.last_name
+ORDER BY total_compras DESC
+LIMIT 5;
