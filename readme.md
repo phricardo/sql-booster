@@ -1,3 +1,8 @@
+DDL (Data Definition Language): CREATE, ALTER, DROP, TRUNCATE, RENAME.
+DML (Data Manipulation Language): SELECT, INSERT, UPDATE, DELETE, MERGE.
+DCL (Data Control Language): GRANT, REVOKE.
+TC (Transaction Control): COMMIT, ROLLBACK, SAVEPOINT, SET TRANSACTION.
+
 SQL pode ser dividido em diferentes subconjuntos, cada um responsável por um conjunto específico de operações sobre o banco de dados. Eis uma explicação de cada um deles:
 
 DDL (Data Definition Language)
